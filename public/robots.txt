@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wellnessogfodpleje.com
+
+# Sitemaps
+Sitemap: https://wellnessogfodpleje.com/sitemap.xml

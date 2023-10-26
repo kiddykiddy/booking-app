@@ -1,10 +1,12 @@
 import React from 'react'; 
 
 export default function Home() {
+
   return (
     <>
-      <div id="frontpage-photo">
+ 
         <div className="hero-bg">
+          
           <h1 className="text-center pt-32 px-5 text-3xl">
             Wellness og Fodpleje by dk.
           </h1>
@@ -13,7 +15,7 @@ export default function Home() {
             er i trykke hænder hos os.
           </h2>
         </div>
-      </div>
+    
       <div className="container">
         <main>
           <div className="text-center pt-5 px-5 text-xl">
