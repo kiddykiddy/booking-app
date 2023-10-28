@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Header() {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('#444444');
+  const [textColor, setTextColor] = useState('#000080');
 
   const handleNav = () => {
     setNav(!nav);
@@ -18,10 +18,10 @@ export default function Header() {
     const changeColor = () => {
       if (window.scrollY >= 20) {
         setColor('#ffffff');
-        setTextColor('#444444');
+        setTextColor('#000080)');
       } else {
         setColor('transparent');
-        setTextColor('#444444');
+        setTextColor('#000080)');
       }
     };
     window.addEventListener('scroll', changeColor);
@@ -32,7 +32,7 @@ export default function Header() {
       style={{ backgroundColor: `${color}` }}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
     >
-      <div className="max-w-[1240px] px-5 m-auto flex justify-between items-center p-1 text-neutral-700">
+      <div className="max-w-[1240px] px-5 m-auto flex justify-between items-center p-1 #000080">
         <Link href="/">
         <Image src="/logo.png" width={60} height={60} alt="Wellness og Fodpleje by dk logo" />
         </Link>
@@ -68,16 +68,16 @@ export default function Header() {
           }
         >
           <ul>
-            <li onClick={handleNav} className='p-5 font-medium text-2xl hover:text-gray-500'>
+            <li onClick={handleNav} className='p-5 font-medium text-blue-900 text-2xl hover:text-gray-500'>
               <Link href='/'>Start</Link>
             </li>
-            <li onClick={handleNav} className='p-5 font-medium text-2xl hover:text-gray-500'>
+            <li onClick={handleNav} className='p-5 font-medium text-blue-900 text-2xl hover:text-gray-500'>
               <Link href='/service'>Behandlinger</Link>
             </li>
-            <li onClick={handleNav} className='p-5 font-medium text-2xl hover:text-gray-500'>
+            <li onClick={handleNav} className='p-5 font-medium text-blue-900 text-2xl hover:text-gray-500'>
               <Link href='/kontakt'>Kontakt</Link>
             </li>
-            <li onClick={handleNav} className='p-5 font-medium text-2xl hover:text-gray-500'>
+            <li onClick={handleNav} className='p-5 font-medium text-blue-900 text-2xl hover:text-gray-500'>
               <Link className="p-3 rounded-lg bg-zinc-200" href='/book'>Book</Link>
             </li>
           </ul>

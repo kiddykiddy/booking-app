@@ -5,6 +5,7 @@
 /* Reset */
 * {
   box-sizing: border-box;
+  --text: #000080;
 }
 
 html {
@@ -43,6 +44,7 @@ body {
   padding-left: 15rem;
   padding-right: 15rem;
   padding-bottom: 7rem; /* keep footer down */
+  color: var(--text);
 }
 
 footer {
@@ -53,10 +55,11 @@ footer {
   width: 100%;
   position: absolute; /* keep footer down */
   bottom: 0; /* keep footer down */
+  color: var(--text);
 }
 
 h1, h2 {
-  color: #444444;
+  color: var(--text);
 }
 
 .hero-bg {
@@ -124,7 +127,7 @@ hr {
 .massage-heading {
   padding-left: 0;
   font-size: 3.5rem;
-  color: #444444;
+  color: var(--text);
 }
 
 .price-info {
@@ -132,7 +135,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  color: #444444;
+  color: var(--text);
   font-weight: 600;
   font-size: 1.2rem;
   gap: 0.6rem;
@@ -156,7 +159,7 @@ hr {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  color: #444444;
+  color: var(--text);
 }
 
 /* Media Queries for different screen sizes */
