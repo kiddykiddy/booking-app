@@ -1,21 +1,19 @@
-import React from 'react'; 
+import React from "react";
 
 export default function Home() {
-
   return (
     <>
- 
-        <div className="hero-bg">
-          
-          <h1 className="text-center pt-32 px-5 text-3xl">
-            Wellness og Fodpleje by dk.
-          </h1>
-          <h2 className="text-center pt-5 px-5 text-xl">
-            Vi tilbyder en professionel behandling indenfor fodpleje og massage. Du
-            er i trykke hænder hos os.
+      <div className="hero-bg">
+        <div className="headingContainer">
+          <h1 className="heading1">Wellness og Fodpleje by dk.</h1>
+          <h2 className="heading2">
+            Vi tilbyder en professionel behandling indenfor fodpleje og massage.{" "}
+            <br />
+            Du er i trykke hænder hos os.
           </h2>
         </div>
-    
+      </div>
+
       <div className="container">
         <main>
           <div className="text-center pt-5 px-5 text-xl">
