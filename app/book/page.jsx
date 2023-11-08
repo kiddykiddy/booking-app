@@ -42,13 +42,13 @@ export default function Book() {
               <div className="price-info">
                 Par oliemassage (60 min) 750 kr.
                 <Link className="btn book" href="tel:+4526246614">
-                  Ring ind for at booke
+                  Ring for at booke
                 </Link>
               </div>
               <div className="price-info">
                 Par oliemassage (90 min) 1.075 kr.
                 <Link className="btn book" href="tel:+4526246614">
-                  Ring ind for at booke
+                  Ring for at booke
                 </Link>
               </div>
             </div>

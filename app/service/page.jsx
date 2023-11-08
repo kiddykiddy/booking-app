@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,24 +20,23 @@ export default function Service() {
       </Head>
       <div className="container pt-32">
         <main>
-          <div className="text-center pt-5 px-5 text-2xl service-heading">
+          <div id="first-heading">
             Find den rigtige type behandling til dig.
           </div>
-          <div className="text-center pt-5 px-5 text-xl service-heading">
+          <div id="second-heading">
             Vi er specialiseret i fodpleje og thai massage teknikker. <br />
             Her finder du den rigtige behandling for dig. <br />
           </div>
-          <div className="massage-heading pt-5">Massage</div>
+          <div className="massage-heading">Massage</div>
           <div className="allservice">
-            <Image
-              src="/massage-oil.png"
-              width={100}
-              height={80}
-              alt="Massage Oil"
-              className="service-img"
-            />
             <div className="description">
-              <div className="text-center pt-5 px-5 text-2xl">Oliemassage</div>
+              <Image
+                className="service-img"
+                src="/massage-oil.png"
+                alt="Massage Oil"
+                width={280}
+                height={80}
+              />
               <div className="text-info">
                 Vi tilbyder en afslappende fuld krops Oliemassage hvor du vil
                 opleve at din krop finder absolut ro. Behandlingen anbefales
@@ -48,65 +48,50 @@ export default function Service() {
                 slappe helt af efter din behandling. Vores Oliemassage er oplagt
                 til par som gerne vil forkæle hinanden.
               </div>
-              <div className="normal-par-Container">
-                <div className="normalContainer">
-                  <div className="service-title">Oliemassage</div>
-                  <div className="price-info">
-                    <span className="minutes">60 min</span>{" "}
-                    <span className="price">400 kr.</span>
-                    <Link
-                      className="btn book"
-                      href="https://calendly.com/wellnessogfodpleje/oliemassage-60-min?hide_gdpr_banner=1"
-                    >
-                      Book nu
-                    </Link>
-                  </div>
-                  <div className="price-info">
-                    <span className="minutes">90 min</span>{" "}
-                    <span className="price">550 kr.</span>
-                    <Link
-                      className="btn book"
-                      href="https://calendly.com/wellnessogfodpleje/oliemassage-90-min?hide_gdpr_banner=1"
-                    >
-                      Book nu
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="parContainer">
-                  <div className="service-title">Par oliemassage</div>
-                  <div className="price-info">
-                    <span className="minutes">60 min</span>{" "}
-                    <span className="price">750 kr.</span>
-                    <Link className="btn book" href="tel:+4526246614">
-                      Ring ind for at booke
-                    </Link>
-                  </div>
-                  <div className="price-info">
-                    <span className="minutes">90 min</span>{" "}
-                    <span className="price">1.075 kr.</span>
-                    <Link className="btn book" href="tel:+4526246614">
-                      Ring ind for at booke
-                    </Link>
-                  </div>
-                </div>
+              <div className="price-info">
+                Oliemassage (60 min) 400 kr.
+                <Link
+                  className="btn book"
+                  href="https://calendly.com/wellnessogfodpleje/oliemassage-60-min?hide_gdpr_banner=1"
+                >
+                  Book nu
+                </Link>
+              </div>
+              <div className="price-info">
+                Oliemassage (90 min) 550 kr.
+                <Link
+                  className="btn book "
+                  href="https://calendly.com/wellnessogfodpleje/oliemassage-90-min?hide_gdpr_banner=1"
+                >
+                  Book nu
+                </Link>
+              </div>
+              <div className="price-info">
+                Par oliemassage (60 min) 750 kr.
+                <Link className="btn book" href="tel:+4526246614">
+                  Ring for at booke
+                </Link>
+              </div>
+              <div className="price-info">
+                Par oliemassage (90 min) 1.075 kr.
+                <Link className="btn book" href="tel:+4526246614">
+                  Ring for at booke
+                </Link>
               </div>
             </div>
           </div>
           <hr />
           <div className="fodpleje-heading">Fodpleje</div>
+
           <div className="allservice">
-            <Image
-              src="/treatment-foot.png"
-              width={100}
-              height={80}
-              alt="Foot Treatment"
-              className="service-img"
-            />
             <div className="description">
-              <div className="text-center pt-5 px-5 text-2xl">
-                Fodbehandling
-              </div>
+              <Image
+                className="service-img"
+                src="/treatment-foot.png"
+                alt="Foot Treatment"
+                width={280}
+                height={80}
+              />
               <div className="text-info">
                 Vores Fodbehandling til dig som ønsker det bedste for dine
                 fødder. Ved fodbehandlingen vil du få et fodbad, fjernelse af
@@ -116,9 +101,8 @@ export default function Service() {
                 ved at følge medianbanerne, dette vil stimulere
                 blodcirkulationen og nervesystemet.
               </div>
-              <div className="service-title">Fodbehandling</div>
               <div className="price-info">
-                <span className="price">350 kr.</span>
+                Fodbehandling 350 kr.
                 <Link
                   className="btn book"
                   href="https://calendly.com/wellnessogfodpleje/fodbehandling?hide_gdpr_banner=1"
@@ -126,18 +110,13 @@ export default function Service() {
                   Book nu
                 </Link>
               </div>
-            </div>
-          </div>
-          <div className="allservice">
-            <Image
-              src="/massage-foot.png"
-              width={100}
-              height={80}
-              alt="Foot Massage"
-              className="service-img"
-            />
-            <div className="description">
-              <div className="text-center pt-5 px-5 text-2xl">Fodmassage</div>
+              <Image
+                className="service-img"
+                src="/massage-foot.png"
+                alt="Foot Massage"
+                width={280}
+                height={80}
+              />
               <div className="text-info">
                 Ved fodmassage anvender vi thai teknikker ved at følge
                 medianbanerne, dette vil stimulere blodcirkulationen og
@@ -148,10 +127,8 @@ export default function Service() {
                 under- og oversidderne af fødderne, for derefter at massere
                 underbenene.
               </div>
-              <div className="service-title">Fodmassage</div>
               <div className="price-info">
-                <span className="minutes">30 min</span>
-                <span className="price">180 kr.</span>
+                Fodmassage (30 min) 180 kr.
                 <Link
                   className="btn book"
                   href="https://calendly.com/wellnessogfodpleje/fodmassage-30-min?hide_gdpr_banner=1"

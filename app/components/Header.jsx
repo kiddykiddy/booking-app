@@ -52,7 +52,7 @@ export default function Header() {
             <Link href="/kontakt">Kontakt</Link>
           </li>
           <li className="m-5 pb-2 font-medium text-2xl">
-            <Link className="book" href="/book">
+            <Link className="book-nav" href="/book">
               Book
             </Link>
           </li>
@@ -61,17 +61,9 @@ export default function Header() {
         {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
           {nav ? (
-            <AiOutlineClose
-              className="cursor-pointer"
-              size={30}
-              style={{ color: `${textColor}` }}
-            />
+            <AiOutlineClose className="cursor-pointer text-red-800" size={35} />
           ) : (
-            <AiOutlineMenu
-              className="cursor-pointer"
-              size={30}
-              style={{ color: `${textColor}` }}
-            />
+            <AiOutlineMenu className="cursor-pointer text-red-800" size={35} />
           )}
         </div>
         {/* Mobile Menu */}
@@ -105,7 +97,7 @@ export default function Header() {
               onClick={handleNav}
               className="p-5 font-medium text-color text-2xl"
             >
-              <Link className="book" href="/book">
+              <Link className="book-nav" href="/book">
                 Book
               </Link>
             </li>
