@@ -24,7 +24,6 @@ export default function Home() {
             <p>Lørdag: 10:00-15:00</p>
             <p>Søndag: Lukket</p>
             <br />
-            <p>Vi har lukket den 22. til den 26. december </p>
           </div>
         </main>
       </div>
