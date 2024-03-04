@@ -24,6 +24,10 @@ export default function Home() {
             <p>Lørdag: 10:00-15:00</p>
             <p>Søndag: Lukket</p>
             <br />
+            <p>
+              Vores butik vil være lukket fra den 6. marts til den 17. april, og
+              vi vil genåbne <b>den 18. april.</b>
+            </p>
           </div>
         </main>
       </div>
