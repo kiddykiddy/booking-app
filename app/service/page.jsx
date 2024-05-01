@@ -1,30 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 export default function Service() {
   return (
     <>
-      <Head>
-        {/* Include Calendly CSS and script in the head */}
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        />
-      </Head>
       <div className="container pt-32">
         <main>
           <div id="first-heading">
-            Find den rigtige type behandling til dig.
+            Find the right type of treatment for you.
           </div>
           <div id="second-heading">
-            Vi er specialiseret i fodpleje og thai massage teknikker. <br />
-            Her finder du den rigtige behandling for dig. <br />
+            We specialize in foot care and Thai massage techniques. <br />
+            Here you will find the right treatment for you. <br />
           </div>
           <div className="massage-heading">Massage</div>
           <div className="allservice">
@@ -37,44 +25,38 @@ export default function Service() {
                 height={80}
               />
               <div className="text-info">
-                Vi tilbyder en afslappende fuld krops Oliemassage hvor du vil
-                opleve at din krop finder absolut ro. Behandlingen anbefales
-                hvis du oplever stress eller har et område på din krop som er
-                spændt op. Oliemassagen er en blidere form for massage. Olien er
-                med til at afhjælpe tør og uren hud og gavner vitaliteten og
-                udstrålingen af din hud. Vores tekniker stammer fra den
-                klassiske Thai massage, og derfor vil du opleve at dine muskler
-                slappe helt af efter din behandling. Vores Oliemassage er oplagt
-                til par som gerne vil forkæle hinanden.
+                We offer a relaxing full body oil massage where you will
+                experience absolute tranquility in your body. This treatment is
+                recommended if you are experiencing stress or have an area of
+                your body that is tense. The oil massage is a gentler form of
+                massage. The oil helps to alleviate dry and blemished skin and
+                promotes vitality and radiance in your skin. Our technique
+                originates from traditional Thai massage, so you will experience
+                your muscles completely relaxing after your treatment. Our oil
+                massage is perfect for couples who want to pamper each other.
               </div>
               <div className="price-info">
-                Oliemassage (60 min) 400 kr.
-                <Link
-                  className="btn book"
-                  href="https://calendly.com/wellnessogfodpleje/oliemassage-60-min?hide_gdpr_banner=1"
-                >
+                Oil massage (60 min) 40 dollars.
+                <Link className="btn book" href="https://calendly.com">
+                  Book now
+                </Link>
+              </div>
+              <div className="price-info">
+                Oliemassage (90 min) 55 dollars.
+                <Link className="btn book " href="https://calendly.com">
                   Book nu
                 </Link>
               </div>
               <div className="price-info">
-                Oliemassage (90 min) 550 kr.
-                <Link
-                  className="btn book "
-                  href="https://calendly.com/wellnessogfodpleje/oliemassage-90-min?hide_gdpr_banner=1"
-                >
-                  Book nu
+                Couples Couples oil massage (60 min) 75 dollars.
+                <Link className="btn book" href="tel:+498009">
+                  Call us
                 </Link>
               </div>
               <div className="price-info">
-                Par oliemassage (60 min) 750 kr.
-                <Link className="btn book" href="tel:+4526246614">
-                  Ring for at booke
-                </Link>
-              </div>
-              <div className="price-info">
-                Par oliemassage (90 min) 1.075 kr.
-                <Link className="btn book" href="tel:+4526246614">
-                  Ring for at booke
+                Couples Couples oil massage (90 min) 1.07 dollars.
+                <Link className="btn book" href="tel:+492624661[094">
+                  Call us
                 </Link>
               </div>
             </div>
@@ -92,21 +74,18 @@ export default function Service() {
                 height={80}
               />
               <div className="text-info">
-                Vores Fodbehandling til dig som ønsker det bedste for dine
-                fødder. Ved fodbehandlingen vil du få et fodbad, fjernelse af
-                hård hud, fjernelse af eventuelle ligtorne. Dine fødder vil
-                føles som helt nye, og de vil takke dig efter vores behandling.
-                Vi slutter af med en fodmassage. Her anvendes thai teknikkerne
-                ved at følge medianbanerne, dette vil stimulere
-                blodcirkulationen og nervesystemet.
+                Our Foot Treatment is for those who want the best for their
+                feet. During the treatment, you will receive a foot bath,
+                removal of hard skin, and any calluses. Your feet will feel
+                brand new and will thank you after our treatment. We finish with
+                a foot massage, using Thai techniques to follow the median
+                lines, which will stimulate blood circulation and the nervous
+                system.
               </div>
               <div className="price-info">
-                Fodbehandling 350 kr.
-                <Link
-                  className="btn book"
-                  href="https://calendly.com/wellnessogfodpleje/fodbehandling?hide_gdpr_banner=1"
-                >
-                  Book nu
+                Foot treatment 35 dallors.
+                <Link className="btn book" href="https://calendly.com/">
+                  Book now
                 </Link>
               </div>
               <Image
@@ -117,22 +96,19 @@ export default function Service() {
                 height={80}
               />
               <div className="text-info">
-                Ved fodmassage anvender vi thai teknikker ved at følge
-                medianbanerne, dette vil stimulere blodcirkulationen og
-                nervesystemet. Ved at anvende trykterapi på foden vil du opleve
-                en krop i balance. Nervesystemet i foden løber gennem hele
-                kroppen, og derfor vil fodmassagen være med til at helbrede
-                eller forebygge sygdom. Massagen forgår ved først at massere
-                under- og oversidderne af fødderne, for derefter at massere
-                underbenene.
+                In foot massage, we use Thai techniques by following the median
+                lines, stimulating blood circulation and the nervous system.
+                Applying pressure therapy to the foot will provide a sense of
+                balance throughout the body. The nervous system in the foot
+                extends throughout the entire body, so foot massage helps heal
+                or prevent illness. The massage begins by massaging the
+                undersides and tops of the feet, then moving on to massage the
+                lower legs.
               </div>
               <div className="price-info">
-                Fodmassage (30 min) 180 kr.
-                <Link
-                  className="btn book"
-                  href="https://calendly.com/wellnessogfodpleje/fodmassage-30-min?hide_gdpr_banner=1"
-                >
-                  Book nu
+                Foot treatment (30 min) 18 dollars.
+                <Link className="btn book" href="https://calendly.com/">
+                  Book now
                 </Link>
               </div>
             </div>

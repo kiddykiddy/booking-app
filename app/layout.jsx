@@ -11,25 +11,13 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Massage | Wellness Og Fodpleje | Aarhus",
-  description:
-    "Vi tilbyder en professionel behandling indenfor fodpleje og massage i Aarhus.",
+  title: "Massage | Wellness",
+  description: "We offer professional treatment in foot care and massage.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="dk">
-      <Head>
-        {/* Include Calendly CSS and script in the head */}
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        />
-      </Head>
       <body className={inter.className}>
         <div id="wrapper">
           <Header />

@@ -5,11 +5,11 @@ export default function Home() {
     <>
       <div className="hero-bg">
         <div className="headingContainer">
-          <h1 className="heading1">Wellness og Fodpleje by dk.</h1>
+          <h1 className="heading1">Wellness therapy</h1>
           <h2 className="heading2">
-            Vi tilbyder en professionel behandling indenfor fodpleje og massage.{" "}
+            We offer professional treatment in foot care and massage.
             <br />
-            Du er i trykke hænder hos os.
+            You are in good hands with us.
           </h2>
         </div>
       </div>
@@ -17,17 +17,13 @@ export default function Home() {
       <div className="container">
         <main>
           <div className="text-center pt-5 px-5 text-xl">
-            <b>Åbningstider</b>
+            <b>Opening time</b>
           </div>
           <div className="text-center pt-5 px-5 text-xl">
-            <p>Mandag-Fredag: 10:00-18:00</p>
-            <p>Lørdag: 10:00-15:00</p>
-            <p>Søndag: Lukket</p>
+            <p>Manday-Friday: 10:00-18:00</p>
+            <p>Saturday: 10:00-15:00</p>
+            <p>Sunday: Close</p>
             <br />
-            <p>
-              Vores butik vil være lukket fra den 6. marts til den 17. april, og
-              vi vil genåbne <b>den 18. april.</b>
-            </p>
           </div>
         </main>
       </div>

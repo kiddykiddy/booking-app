@@ -43,13 +43,13 @@ export default function Header() {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="m-5 pb-2 font-medium text-2xl navlink">
-            <Link href="/">Start</Link>
+            <Link href="/">Home</Link>
           </li>
           <li className="m-5 pb-2 font-medium text-2xl navlink">
-            <Link href="/service">Behandlinger</Link>
+            <Link href="/service">Service</Link>
           </li>
           <li className="m-5 pb-2 font-medium text-2xl navlink">
-            <Link href="/kontakt">Kontakt</Link>
+            <Link href="/kontakt">Contact</Link>
           </li>
           <li className="m-5 pb-2 font-medium text-2xl">
             <Link className="book-nav" href="/book">
@@ -79,19 +79,19 @@ export default function Header() {
               onClick={handleNav}
               className="p-5 font-medium text-color text-2xl hover:text-pink-700"
             >
-              <Link href="/">Start</Link>
+              <Link href="/">Home</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-5 font-medium text-color text-2xl hover:text-pink-700"
             >
-              <Link href="/service">Behandlinger</Link>
+              <Link href="/service">Service</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-5 font-medium text-color text-2xl hover:text-pink-700"
             >
-              <Link href="/kontakt">Kontakt</Link>
+              <Link href="/kontakt">Contact</Link>
             </li>
             <li
               onClick={handleNav}
