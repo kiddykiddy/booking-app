@@ -9,9 +9,7 @@ export default function Home() {
       <div className="container">
         <main>
           <div className="text-center text-xl">
-            <h1 className="home-heading">
-              Book Beauty and Wellness Services near you
-            </h1>
+            <h1 className="home-heading">Book Wellness Services near you</h1>
             <SearchBar />
           </div>
         </main>
