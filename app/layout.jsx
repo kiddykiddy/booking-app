@@ -11,8 +11,8 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Massage | Wellness",
-  description: "We offer professional treatment in foot care and massage.",
+  title: "ZenSpot | Booking App",
+  description: "We provide booking system for wellness businesses",
 };
 
 export default function RootLayout({ children }) {

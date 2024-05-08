@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Header() {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
-  const [textColor, setTextColor] = useState("darkgreen");
+  const [textColor, setTextColor] = useState("#243953");
 
   const handleNav = () => {
     setNav(!nav);
@@ -33,28 +33,15 @@ export default function Header() {
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
       <div className="max-w-[1240px] px-5 m-auto flex justify-between items-center p-1 #000080">
-        <Link href="/">
-          <Image
-            src="/logo.png"
-            width={60}
-            height={60}
-            alt="Wellness og Fodpleje by dk logo"
-          />
-        </Link>
+        <li className="logo">
+          <Link href="/">ZenSpot</Link>
+        </li>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="m-5 pb-2 font-medium text-2xl navlink">
-            <Link href="/">Home</Link>
+          <li className="m-5 pb-2 font-medium text-xl navlink">
+            <Link href="/">For Business</Link>
           </li>
-          <li className="m-5 pb-2 font-medium text-2xl navlink">
-            <Link href="/service">Service</Link>
-          </li>
-          <li className="m-5 pb-2 font-medium text-2xl navlink">
-            <Link href="/kontakt">Contact</Link>
-          </li>
-          <li className="m-5 pb-2 font-medium text-2xl">
-            <Link className="book-nav" href="/book">
-              Book
-            </Link>
+          <li className="m-5 pb-2 font-medium text-xl navlink">
+            <Link href="/">Menu</Link>
           </li>
         </ul>
 
@@ -79,28 +66,18 @@ export default function Header() {
               onClick={handleNav}
               className="p-5 font-medium text-color text-2xl hover:text-pink-700"
             >
-              <Link href="/">Home</Link>
+              <Link href="/">For Business</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-5 font-medium text-color text-2xl hover:text-pink-700"
             >
-              <Link href="/service">Service</Link>
+              <Link href="/">Menu</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-5 font-medium text-color text-2xl hover:text-pink-700"
-            >
-              <Link href="/kontakt">Contact</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-5 font-medium text-color text-2xl"
-            >
-              <Link className="book-nav" href="/book">
-                Book
-              </Link>
-            </li>
+            ></li>
           </ul>
         </div>
       </div>

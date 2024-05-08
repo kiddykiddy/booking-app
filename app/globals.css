@@ -5,7 +5,7 @@
 /* Reset */
 * {
   box-sizing: border-box;
-  --text: green;
+  --text: #243953;
 }
 
 .text-color {
@@ -27,7 +27,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  background: #f6f1eb;
+  background: white;
 }
 
 #frontpage-photo,
@@ -64,22 +64,50 @@ footer {
   color: var(--text);
 }
 
+.search-btn {
+  border-radius: 30px;
+  background-color: var(--text);
+  color: white;
+  padding: 7px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.search-bar {
+  background-color: transparent;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 30px;
+  border: solid 1px var(--text);
+}
+
+select {
+  margin: 5px;
+  border-right: solid 1px pink;
+}
+
+.logo {
+  list-style-type: none;
+  font-size: 30px;
+  color: var(--text);
+}
+
 h1,
 h2 {
   color: var(--text);
 }
 
 .hero-bg {
-  height: 70vh;
+  height: 20vh;
   width: 100%;
 
   /* Create the parallax scrolling effect */
   background-image: linear-gradient(
-      0deg,
-      rgba(247, 252, 250, 0.4),
-      rgba(247, 252, 250, 0.4)
-    ),
-    url("../public/thai-massage-hero-image.jpeg");
+    0deg,
+    rgba(247, 252, 250, 0.4),
+    rgba(247, 252, 250, 0.4)
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -99,7 +127,7 @@ h2 {
   border-radius: 10px;
   color: whitesmoke;
   padding: 7px;
-  background-color: rgba(0, 128, 0, 0.8);
+  background-color: var(--text);
   transition: 0.3s;
 }
 
@@ -120,7 +148,7 @@ h2 {
   bottom: 2px;
   width: 100%;
   height: 3px;
-  background-color: red;
+  background-color: var(--text);
   transform: scaleX(0);
   transform-origin: 100% 100%;
   transition: transform 0.2s ease-in;
@@ -132,6 +160,13 @@ h2 {
 }
 
 /*Home Page - Hero Heading*/
+
+.home-heading {
+  margin: 50px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .headingContainer {
   display: flex;
   width: 100%;
@@ -151,6 +186,32 @@ h2 {
 
 .heading2 {
   text-align: center;
+}
+
+.business-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 90vw;
+  height: auto;
+  justify-content: flex-start;
+}
+
+.business {
+  background-color: #f5f3ee;
+  width: 200px;
+  height: auto;
+  margin: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.business-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
 }
 
 /*Service&Book Page - service section*/
@@ -232,14 +293,13 @@ hr {
   border-radius: 10px;
   color: var(--text);
   padding: 7px;
-  border: solid green 2px;
+  border: solid var(--text) 2px;
   transition: 0.3s;
-  width: fit-content;
+  width: 150px;
 }
 
 .book:hover {
-  background-color: green;
-  color: whitesmoke;
+  background-color: rgb(222, 167, 224);
 }
 
 .text-info {
@@ -429,6 +489,21 @@ hr {
 
 /* sm */
 @media (max-width: 640px) {
+  .search-btn {
+    width: 90%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+  .hero-bg {
+    height: 0;
+  }
+
   .container {
     min-width: 100%;
     padding-left: 1.5rem;
@@ -489,6 +564,10 @@ hr {
 
 /* xs */
 @media (max-width: 475px) {
+  .business-list {
+    justify-content: center;
+  }
+
   .container {
     width: 100%;
     padding-left: 1rem;
