@@ -213,6 +213,23 @@ h2 {
   height: auto;
   margin-bottom: 5px;
 }
+/* styles/globals.css */
+
+/* Global styles for StarRating component */
+.star-rating {
+  display: inline-flex;
+}
+
+.star {
+  font-size: 1.5rem;
+}
+
+/* Styling for stars */
+.full,
+.half,
+.empty {
+  color: #ffd700; /* Gold color for all stars */
+}
 
 /*Service&Book Page - service section*/
 

@@ -1,3 +1,4 @@
+// businessData.js
 const businessData = [
   {
     id: 1,
@@ -5,6 +6,7 @@ const businessData = [
     location: "Kolding",
     service: "Barber",
     imageUrl: "/barber.jpg",
+    rating: 4.5,
   },
   {
     id: 2,
@@ -12,6 +14,7 @@ const businessData = [
     location: "Kolding",
     service: "Barber",
     imageUrl: "/barber.jpg",
+    rating: 4.0,
   },
   {
     id: 3,
@@ -19,6 +22,7 @@ const businessData = [
     location: "Kolding",
     service: "Salon",
     imageUrl: "/salon.jpg",
+    rating: 3,
   },
   {
     id: 4,
@@ -26,6 +30,7 @@ const businessData = [
     location: "Copenhagen",
     service: "Salon",
     imageUrl: "/salon.jpg",
+    rating: 4.8,
   },
   {
     id: 5,
@@ -33,6 +38,7 @@ const businessData = [
     location: "Aarhus",
     service: "Salon",
     imageUrl: "/salon.jpg",
+    rating: 4.2,
   },
   {
     id: 6,
@@ -40,20 +46,23 @@ const businessData = [
     location: "Aarhus",
     service: "Massage",
     imageUrl: "/spa.jpg",
+    rating: 3.9,
   },
   {
     id: 7,
     name: "Business 7",
     location: "Aarhus",
     service: "Salon",
-    imageUrl: "/salon.jpg", // Add a default image URL if the business doesn't have an associated image
+    imageUrl: "/salon.jpg",
+    rating: 4.6,
   },
   {
     id: 8,
     name: "Business 8",
-    location: "Aarhus",
+    location: "Odense",
     service: "Salon",
-    imageUrl: "/salon.jpg", // Add a default image URL if the business doesn't have an associated image
+    imageUrl: "/salon.jpg",
+    rating: 4.0,
   },
   {
     id: 9,
@@ -61,6 +70,7 @@ const businessData = [
     location: "Kolding",
     service: "Massage",
     imageUrl: "/spa.jpg",
+    rating: 3.7,
   },
   {
     id: 10,
@@ -68,6 +78,15 @@ const businessData = [
     location: "Copenhagen",
     service: "Massage",
     imageUrl: "/spa.jpg",
+    rating: 4.3,
+  },
+  {
+    id: 10,
+    name: "Business 11",
+    location: "Odense",
+    service: "Massage",
+    imageUrl: "/spa.jpg",
+    rating: 4.3,
   },
 ];
 
